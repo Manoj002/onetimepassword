@@ -10,7 +10,6 @@ admin.initializeApp({
     databaseURL: "https://fir-userlogin-44527.firebaseio.com"
 });
 
-
 exports.createUser = functions.https.onRequest(createUser);
 exports.requestOneTimePassword  = functions.https.onRequest(requestOneTimePassword);
 exports.verifyOneTimePassword = functions.https.onRequest(verifyOneTimePassword);
